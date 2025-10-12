@@ -40,4 +40,4 @@ const ToolURL = 'https://chart.minecraftpeayer.me/upload-data';
     };
     urlSpan.appendChild(url);
     if (commentBox) commentBox.appendChild(urlSpan);
-});
+})();
