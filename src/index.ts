@@ -3,7 +3,7 @@ import requestRecentAll from './utils/requestRecentAll';
 import requestRecentDetail from './utils/requestRecentDetail';
 import requestPlayerData from './utils/requestPlayerData';
 
-const ToolURL = 'https://chart.minecraftpeayer.me/upload-data';
+const ToolURL = 'https://chart.minecraftpeayer.me/update-data';
 
 (function () {
     let commentBox = document.querySelector('.comment_block');
