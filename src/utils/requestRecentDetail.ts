@@ -186,13 +186,17 @@ export default async function requestRecentDetail(e: MessageEvent) {
         .textContent.replace(/[\t\n]+/g, '')
         .split('/')
         .map((item) => parseInt(item));
-    let sync = dom
-        .querySelectorAll(
-            '.gray_block > .p_5 > .col2 > .playlog_score_block',
-        )[1]!
-        .textContent.replace(/[\t\n]+/g, '')
-        .split('/')
-        .map((item) => parseInt(item));
+
+    let syncElement = dom.querySelectorAll(
+        '.gray_block > .p_5 > .col2 > .playlog_score_block',
+    )[1]!;
+    let sync =
+        syncElement.textContent.replace(/[\t\n]+/g, '').split('/').length === 1
+            ? [-1, -1]
+            : syncElement.textContent
+                  .replace(/[\t\n]+/g, '')
+                  .split('/')
+                  .map((item) => parseInt(item));
 
     let fastLate: number[] = [];
     let fastLateElement = dom
