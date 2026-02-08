@@ -4,7 +4,7 @@ Bookmarklet script for MinecraftPEayer/maibot
 
 # How to use?
 
-Please check [here](https://chart.minecraftpeayer.me/bookmarklet)
+Please check [here](https://chart.minecraftpeayer.com/bookmarklet)
 
 # User script link
 
