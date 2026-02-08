@@ -13,7 +13,7 @@
     const s = document.createElement('script');
     const cacheBuster = Math.floor(Date.now() / 60000);
     s.src =
-        'https://minecraftpeayer.me/maibot-bookmarklet/main.bundle.js?t=' +
+        'https://minecraftpeayer.com/maibot-bookmarklet/main.bundle.js?t=' +
         cacheBuster;
     document.body.append(s);
 })();
